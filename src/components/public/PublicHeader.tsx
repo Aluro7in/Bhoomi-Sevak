@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
 import { PublicPage } from '../../context/AppContext';
 import { BhoomiSevakLogo } from '../BhoomiSevakLogo';
+import { HelpModal } from '../HelpModal';
 import {
   Globe,
   Languages,
@@ -37,6 +38,7 @@ export const PublicHeader: React.FC = () => {
   } = useApp();
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
+  const [helpModalOpen, setHelpModalOpen] = useState<boolean>(false);
 
   const toggleLanguage = () => {
     setLanguage(language === 'hi' ? 'en' : 'hi');
@@ -127,17 +129,17 @@ export const PublicHeader: React.FC = () => {
               <span>{highContrast ? 'HC ON' : 'HC'}</span>
             </button>
 
-            {/* Help Quick Link */}
+            {/* Help Quick Link (Opens Help Modal) */}
             <button
-              onClick={() => handleNavClick('faq')}
-              className="hidden lg:flex items-center gap-1 text-[#d8d3ec] hover:text-white transition-colors cursor-pointer px-1.5 py-0.5 text-[11px]"
-              title={t('सहायता व प्रश्न', 'Help & FAQ')}
+              onClick={() => setHelpModalOpen(true)}
+              className="flex items-center gap-1 text-[#d8d3ec] hover:text-white transition-colors cursor-pointer px-1.5 py-0.5 rounded hover:bg-[#2b254a] text-[11px]"
+              title={t('सहायता व संपर्क निर्देशिका (Help & Directory)', 'Help & Revenue Directory')}
             >
-              <HelpCircle className="w-3 h-3 text-[#a59ec7]" />
-              <span>{t('सहायता', 'Help')}</span>
+              <HelpCircle className="w-3.5 h-3.5 text-amber-300" />
+              <span className="font-semibold">{t('सहायता', 'Help')}</span>
             </button>
 
-            <span className="w-px h-3.5 bg-[#3e3766] hidden sm:inline" />
+            <span className="w-px h-3.5 bg-[#3e3766]" />
 
             {/* Language Switcher */}
             <button
@@ -369,26 +371,40 @@ export const PublicHeader: React.FC = () => {
 
           <div className="pt-2 border-t border-[#ede9f7] grid grid-cols-2 gap-2">
             <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setHelpModalOpen(true);
+              }}
+              className="w-full py-2.5 rounded-xl text-xs font-bold bg-[#f4f2f9] text-[#5e4db2] border border-[#e5dff2] flex items-center justify-center gap-1.5"
+            >
+              <HelpCircle className="w-3.5 h-3.5 text-[#5e4db2]" />
+              <span>{t('सहायता निर्देशिका', 'Help & Directory')}</span>
+            </button>
+
+            <button
               onClick={() => handleNavClick('login')}
               className="w-full py-2.5 rounded-xl text-xs font-bold bg-[#faf9fc] text-slate-800 border border-[#e5dff2] flex items-center justify-center gap-1.5"
             >
               <LogIn className="w-3.5 h-3.5 text-[#5e4db2]" />
               <span>{t('नागरिक लॉगिन', 'Login')}</span>
             </button>
-
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                navigateToApp('meri_zameen');
-              }}
-              className="w-full py-2.5 rounded-xl bg-gradient-to-r from-[#4c3a9e] to-[#5e4db2] text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-xs"
-            >
-              <span>{t('शुरू करें', 'Get Started')}</span>
-              <ArrowRight className="w-3.5 h-3.5 text-purple-200" />
-            </button>
           </div>
+
+          <button
+            onClick={() => {
+              setMobileMenuOpen(false);
+              navigateToApp('meri_zameen');
+            }}
+            className="w-full py-2.5 rounded-xl bg-gradient-to-r from-[#4c3a9e] to-[#5e4db2] text-white text-xs font-bold flex items-center justify-center gap-1.5 shadow-xs"
+          >
+            <span>{t('शुरू करें', 'Get Started')}</span>
+            <ArrowRight className="w-3.5 h-3.5 text-purple-200" />
+          </button>
         </div>
       )}
+
+      {/* Help Modal */}
+      <HelpModal isOpen={helpModalOpen} onClose={() => setHelpModalOpen(false)} />
     </header>
   );
 };

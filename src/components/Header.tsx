@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useApp } from '../context/AppContext';
 import { BhoomiSevakLogo } from './BhoomiSevakLogo';
+import { HelpModal } from './HelpModal';
 import {
   FileText,
   MapPin,
@@ -50,6 +51,7 @@ export const Header: React.FC = () => {
   } = useApp();
 
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [helpModalOpen, setHelpModalOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   // Close menu on outside click
@@ -271,11 +273,25 @@ export const Header: React.FC = () => {
                   <button
                     onClick={() => {
                       setMenuOpen(false);
-                      navigateToPublic('home');
+                      setHelpModalOpen(true);
                     }}
                     className="w-full flex items-center justify-between p-2 rounded-xl text-xs font-medium text-[#1e212b] hover:bg-[#f4f2f9] transition-colors"
                   >
                     <span className="flex items-center gap-2 text-[#5e4db2] font-semibold">
+                      <HelpCircle className="w-4 h-4 text-[#5e4db2]" />
+                      <span>{t('सहायता व राजस्व संपर्क निर्देशिका', 'Help & Revenue Directory')}</span>
+                    </span>
+                    <ChevronDown className="w-3.5 h-3.5 -rotate-90 text-[#767d8f]" />
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      setMenuOpen(false);
+                      navigateToPublic('home');
+                    }}
+                    className="w-full flex items-center justify-between p-2 rounded-xl text-xs font-medium text-[#1e212b] hover:bg-[#f4f2f9] transition-colors"
+                  >
+                    <span className="flex items-center gap-2 text-[#555968] font-medium">
                       <Globe className="w-4 h-4 text-[#5e4db2]" />
                       <span>{t('सार्वजनिक पोर्टल व नागरिक गाइड', 'Public Portal & Citizen Guides')}</span>
                     </span>
@@ -405,6 +421,9 @@ export const Header: React.FC = () => {
           </button>
         </div>
       </nav>
+
+      {/* Help Modal */}
+      <HelpModal isOpen={helpModalOpen} onClose={() => setHelpModalOpen(false)} />
     </header>
   );
 };
