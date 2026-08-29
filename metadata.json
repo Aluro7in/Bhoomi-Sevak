@@ -1,0 +1,6 @@
+{
+  "name": "Bhoomi Sevak",
+  "description": "AI-native citizen interaction layer for land records: find, understand, verify, cadastral map, document locker, and mutation tracking in Hindi and English.",
+  "requestFramePermissions": ["microphone", "geolocation", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

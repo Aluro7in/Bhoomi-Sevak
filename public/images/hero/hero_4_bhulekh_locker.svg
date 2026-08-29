@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 680" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf6f0"/>
+      <stop offset="40%" stop-color="#f5efe6"/>
+      <stop offset="100%" stop-color="#ebdcd0"/>
+    </linearGradient>
+
+    <!-- Folder Tab Purple Gradient -->
+    <linearGradient id="tabPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+
+    <!-- Tea / Chai Gradient -->
+    <linearGradient id="chai4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+
+    <linearGradient id="fadeLeft4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#faf6f0" stop-opacity="0.97"/>
+      <stop offset="40%" stop-color="#faf6f0" stop-opacity="0.88"/>
+      <stop offset="65%" stop-color="#faf6f0" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#faf6f0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1600" height="680" fill="url(#bg4)"/>
+
+  <!-- Flat-lay Desk Scene on the Right (X: 480 - 1600) -->
+  <g transform="translate(480, 0)">
+    <!-- Desk Surface & Purple Portfolio Mat at Right -->
+    <rect x="520" y="0" width="600" height="680" fill="#ede9fe" opacity="0.6"/>
+    <rect x="680" y="0" width="440" height="680" fill="#a78bfa" opacity="0.4"/>
+
+    <!-- Cup of Hot Chai with Saucer (Top Right) -->
+    <g transform="translate(940, 60)">
+      <!-- Saucer -->
+      <circle cx="60" cy="60" r="58" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" filter="drop-shadow(0 8px 12px rgba(0,0,0,0.15))"/>
+      <!-- Ceramic Cup -->
+      <circle cx="60" cy="60" r="42" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+      <!-- Steaming Chai Liquid -->
+      <circle cx="60" cy="60" r="34" fill="url(#chai4)"/>
+      <ellipse cx="60" cy="56" rx="20" ry="10" fill="#fbbf24" opacity="0.4"/>
+      <!-- Cup Handle -->
+      <path d="M 102,50 Q 120,60 102,70" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <!-- Green Houseplant Leaves (Right Side) -->
+    <g transform="translate(1000, 260)">
+      <!-- Plant Pot -->
+      <rect x="50" y="80" width="70" height="90" rx="6" fill="#1e293b"/>
+      <polygon points="45,80 125,80 115,160 55,160" fill="#0f172a"/>
+      <!-- Green Leaves -->
+      <path d="M 85,80 Q 50,30 20,40 Q 50,65 85,80 Z" fill="#22c55e"/>
+      <path d="M 85,80 Q 90,10 70,0 Q 80,45 85,80 Z" fill="#16a34a"/>
+      <path d="M 85,80 Q 130,20 145,35 Q 115,65 85,80 Z" fill="#4ade80"/>
+      <path d="M 85,80 Q 110,50 140,80 Q 105,85 85,80 Z" fill="#15803d"/>
+    </g>
+
+    <!-- Luxury Pen (Right of Phone) -->
+    <g transform="translate(900, 360) rotate(20)">
+      <rect x="0" y="0" width="12" height="190" rx="6" fill="#1e1b4b" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.2))"/>
+      <rect x="0" y="30" width="12" height="8" fill="#eab308"/>
+      <rect x="0" y="110" width="12" height="4" fill="#eab308"/>
+      <!-- Gold Nib -->
+      <polygon points="2,190 10,190 6,210" fill="#facc15"/>
+      <rect x="4" y="10" width="4" height="45" rx="2" fill="#ca8a04"/>
+    </g>
+
+    <!-- STACK OF DOCUMENT FOLDERS WITH INDEX TABS -->
+    <g transform="translate(140, 50)">
+      <!-- Folder 1: LAND RECORD -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="480" height="580" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.08))"/>
+        <!-- Tab 1 -->
+        <rect x="60" y="-18" width="140" height="22" rx="4" fill="url(#tabPurple)"/>
+        <text x="130" y="-4" font-family="sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">LAND RECORD</text>
+      </g>
+
+      <!-- Folder 2: KHATAUNI -->
+      <g transform="translate(15, 30)">
+        <rect x="0" y="0" width="480" height="550" rx="8" fill="#fefce8" stroke="#fef08a" stroke-width="1.5" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.08))"/>
+        <!-- Tab 2 -->
+        <rect x="60" y="-18" width="120" height="22" rx="4" fill="url(#tabPurple)"/>
+        <text x="120" y="-4" font-family="sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">KHATAUNI</text>
+      </g>
+
+      <!-- Folder 3: REGISTRY / SALE DEED -->
+      <g transform="translate(30, 60)">
+        <rect x="0" y="0" width="480" height="520" rx="8" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.08))"/>
+        <!-- Tab 3 -->
+        <rect x="60" y="-18" width="160" height="22" rx="4" fill="url(#tabPurple)"/>
+        <text x="140" y="-4" font-family="sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">REGISTRY / SALE DEED</text>
+      </g>
+
+      <!-- Folder 4: MUTATION DOCUMENT -->
+      <g transform="translate(45, 90)">
+        <rect x="0" y="0" width="480" height="490" rx="8" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1.5" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.08))"/>
+        <!-- Tab 4 -->
+        <rect x="60" y="-18" width="165" height="22" rx="4" fill="url(#tabPurple)"/>
+        <text x="142" y="-4" font-family="sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">MUTATION DOCUMENT</text>
+      </g>
+
+      <!-- Folder 5: MY UPLOADED DOCUMENT (Top Folder with Map sketch) -->
+      <g transform="translate(60, 120)">
+        <rect x="0" y="0" width="480" height="460" rx="8" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1.5" filter="drop-shadow(0 15px 25px rgba(0,0,0,0.12))"/>
+        <!-- Tab 5 -->
+        <rect x="60" y="-18" width="180" height="22" rx="4" fill="url(#tabPurple)"/>
+        <text x="150" y="-4" font-family="sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">MY UPLOADED DOCUMENT</text>
+
+        <!-- Top Folder Artistic Land/Farm Etching -->
+        <g transform="translate(30, 30)" opacity="0.35">
+          <rect x="0" y="0" width="300" height="150" fill="none" stroke="#6d28d9" stroke-width="1"/>
+          <!-- Village & Hills Landscape Sketch -->
+          <path d="M 20,80 Q 90,40 160,70 T 280,50 L 280,130 L 20,130 Z" fill="#c4b5fd"/>
+          <!-- Cadastral Grid on bottom of page -->
+          <rect x="20" y="170" width="180" height="110" fill="none" stroke="#6d28d9" stroke-width="1"/>
+          <polygon points="30,180 90,185 80,230 35,220" fill="#ddd6fe" stroke="#6d28d9"/>
+          <polygon points="90,185 170,180 160,240 80,230" fill="#ede9fe" stroke="#6d28d9"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- SMARTPHONE ON TOP (Showing Bhoomi Sevak Digital Locker App) -->
+    <g transform="translate(660, 140) rotate(4)">
+      <!-- Phone Body -->
+      <rect x="0" y="0" width="225" height="440" rx="34" fill="#0f172a" stroke="#334155" stroke-width="5" filter="drop-shadow(0 20px 30px rgba(0,0,0,0.35))"/>
+      <!-- Screen Glass -->
+      <rect x="10" y="14" width="205" height="412" rx="26" fill="#ffffff"/>
+
+      <!-- App Header: "My Documents" -->
+      <rect x="10" y="14" width="205" height="55" rx="4" fill="#f8fafc"/>
+      <text x="30" y="48" font-family="sans-serif" font-size="14" font-weight="900" fill="#0f172a">My Documents</text>
+      <text x="30" y="62" font-family="sans-serif" font-size="9" font-weight="600" fill="#64748b">All Documents</text>
+
+      <!-- Document List Items on Smartphone Screen -->
+      <!-- Item 1: Land Record -->
+      <g transform="translate(25, 80)">
+        <rect x="0" y="0" width="175" height="46" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="10" y="9" width="28" height="28" rx="6" fill="#ede9fe"/>
+        <text x="24" y="27" font-family="sans-serif" font-size="12" fill="#7c3aed" text-anchor="middle">📄</text>
+        <text x="48" y="22" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Land Record</text>
+        <text x="48" y="34" font-family="sans-serif" font-size="8" fill="#64748b">1 File • Verified</text>
+      </g>
+
+      <!-- Item 2: Khatauni -->
+      <g transform="translate(25, 134)">
+        <rect x="0" y="0" width="175" height="46" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="10" y="9" width="28" height="28" rx="6" fill="#fef3c7"/>
+        <text x="24" y="27" font-family="sans-serif" font-size="12" fill="#d97706" text-anchor="middle">📋</text>
+        <text x="48" y="22" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Khatauni</text>
+        <text x="48" y="34" font-family="sans-serif" font-size="8" fill="#64748b">1 File • Certified ROR</text>
+      </g>
+
+      <!-- Item 3: Registry / Sale Deed -->
+      <g transform="translate(25, 188)">
+        <rect x="0" y="0" width="175" height="46" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="10" y="9" width="28" height="28" rx="6" fill="#fee2e2"/>
+        <text x="24" y="27" font-family="sans-serif" font-size="12" fill="#dc2626" text-anchor="middle">📑</text>
+        <text x="48" y="22" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Registry / Sale Deed</text>
+        <text x="48" y="34" font-family="sans-serif" font-size="8" fill="#64748b">1 File • Registered</text>
+      </g>
+
+      <!-- Item 4: Mutation Document -->
+      <g transform="translate(25, 242)">
+        <rect x="0" y="0" width="175" height="46" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="10" y="9" width="28" height="28" rx="6" fill="#dcfce7"/>
+        <text x="24" y="27" font-family="sans-serif" font-size="12" fill="#16a34a" text-anchor="middle">⚖️</text>
+        <text x="48" y="22" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Mutation Document</text>
+        <text x="48" y="34" font-family="sans-serif" font-size="8" fill="#64748b">1 File • In Progress</text>
+      </g>
+
+      <!-- Item 5: My Uploaded Document -->
+      <g transform="translate(25, 296)">
+        <rect x="0" y="0" width="175" height="46" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="10" y="9" width="28" height="28" rx="6" fill="#e0e7ff"/>
+        <text x="24" y="27" font-family="sans-serif" font-size="12" fill="#4f46e5" text-anchor="middle">📁</text>
+        <text x="48" y="22" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1e293b">My Uploaded Document</text>
+        <text x="48" y="34" font-family="sans-serif" font-size="8" fill="#64748b">1 File • Encrypted</text>
+      </g>
+
+      <!-- Floating Plus Button (Upload new) -->
+      <circle cx="112" cy="365" r="16" fill="#7c3aed" filter="drop-shadow(0 4px 6px rgba(124,58,237,0.4))"/>
+      <text x="112" y="371" font-family="sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">+</text>
+
+      <!-- Bottom Tab Bar on Screen -->
+      <line x1="10" y1="395" x2="215" y2="395" stroke="#f1f5f9" stroke-width="1"/>
+      <text x="45" y="412" font-family="sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Home</text>
+      <text x="112" y="412" font-family="sans-serif" font-size="8" font-weight="bold" fill="#7c3aed" text-anchor="middle">Documents</text>
+      <text x="180" y="412" font-family="sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Profile</text>
+    </g>
+  </g>
+
+  <!-- Left-to-Right Subtle Wash Overlay -->
+  <rect x="0" y="0" width="850" height="680" fill="url(#fadeLeft4)"/>
+
+  <!-- Topographic Contour Lines on Left Overlay -->
+  <path d="M 0,90 Q 230,120 380,70 T 700,100" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.12"/>
+  <path d="M 0,220 Q 260,250 420,190 T 750,230" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.12"/>
+  <path d="M 0,350 Q 210,380 440,310 T 800,360" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.12"/>
+  <path d="M 0,480 Q 280,510 490,450 T 850,490" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.12"/>
+</svg>

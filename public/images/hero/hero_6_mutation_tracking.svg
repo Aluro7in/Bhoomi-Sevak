@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 680" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fefcf8"/>
+      <stop offset="40%" stop-color="#fcf6eb"/>
+      <stop offset="100%" stop-color="#f5e6d0"/>
+    </linearGradient>
+
+    <!-- Field & Tree Colors -->
+    <linearGradient id="greenField6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#65a30d"/>
+      <stop offset="100%" stop-color="#3f6212"/>
+    </linearGradient>
+
+    <linearGradient id="skin6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c28e67"/>
+      <stop offset="100%" stop-color="#935b39"/>
+    </linearGradient>
+
+    <!-- Kurta Gradient -->
+    <linearGradient id="kurta6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <!-- Purple Scarf -->
+    <linearGradient id="gamcha6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+
+    <linearGradient id="fadeLeft6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fefcf8" stop-opacity="0.97"/>
+      <stop offset="40%" stop-color="#fefcf8" stop-opacity="0.88"/>
+      <stop offset="65%" stop-color="#fefcf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#fefcf8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1600" height="680" fill="url(#bg6)"/>
+
+  <!-- Outdoor Village & Mutation Tracker Scene (X: 420 - 1600) -->
+  <g transform="translate(400, 0)">
+    <!-- Sky & Sunny Village Tree Background -->
+    <rect x="200" y="0" width="1000" height="400" fill="#fef08a" opacity="0.2"/>
+    <circle cx="950" cy="80" r="140" fill="#fde047" opacity="0.3"/>
+
+    <!-- Village Tree Canopy at Center-Right -->
+    <circle cx="820" cy="180" r="130" fill="#4d7c0f" opacity="0.85"/>
+    <circle cx="750" cy="220" r="110" fill="#3f6212" opacity="0.9"/>
+    <circle cx="890" cy="210" r="100" fill="#65a30d" opacity="0.85"/>
+    <!-- Tree Trunk -->
+    <rect x="800" y="260" width="40" height="300" fill="#78350f" rx="4"/>
+
+    <!-- Village Revenue Kiosk / Wall Structure -->
+    <g transform="translate(980, 200)">
+      <rect x="0" y="0" width="220" height="480" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+      <rect x="0" y="0" width="220" height="40" fill="#7c3aed"/>
+      <!-- Notice Board on Wall -->
+      <rect x="30" y="60" width="150" height="120" fill="#ede9fe" stroke="#c4b5fd" stroke-width="2"/>
+      <line x1="45" y1="90" x2="165" y2="90" stroke="#7c3aed" stroke-width="2"/>
+      <line x1="45" y1="110" x2="165" y2="110" stroke="#7c3aed" stroke-width="1"/>
+      <line x1="45" y1="130" x2="165" y2="130" stroke="#7c3aed" stroke-width="1"/>
+      <line x1="45" y1="150" x2="165" y2="150" stroke="#7c3aed" stroke-width="1"/>
+    </g>
+
+    <!-- Green Crop Fields in Midground -->
+    <polygon points="200,420 1200,380 1200,680 200,680" fill="url(#greenField6)"/>
+    <polygon points="200,480 600,440 900,680 200,680" fill="#4d7c0f"/>
+
+    <!-- 1. 5-STAGE MUTATION PROGRESS TIMELINE (Rendered horizontally in the scene) -->
+    <g transform="translate(60, 480)">
+      <!-- Connecting Stage Line -->
+      <line x1="40" y1="40" x2="680" y2="40" stroke="#a78bfa" stroke-width="4"/>
+
+      <!-- Stage 1: Application Submitted (Completed) -->
+      <g transform="translate(40, 40)">
+        <circle cx="0" cy="0" r="22" fill="#7c3aed" filter="drop-shadow(0 4px 6px rgba(124,58,237,0.3))"/>
+        <!-- White Checkmark -->
+        <path d="M -7,0 L -2,5 L 8,-5" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+        <text x="0" y="44" font-family="sans-serif" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">Application</text>
+        <text x="0" y="58" font-family="sans-serif" font-size="10" font-weight="600" fill="#64748b" text-anchor="middle">Submitted</text>
+      </g>
+
+      <!-- Stage 2: Verification (Completed) -->
+      <g transform="translate(200, 40)">
+        <circle cx="0" cy="0" r="22" fill="#7c3aed" filter="drop-shadow(0 4px 6px rgba(124,58,237,0.3))"/>
+        <path d="M -7,0 L -2,5 L 8,-5" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+        <text x="0" y="44" font-family="sans-serif" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">Lekhpal</text>
+        <text x="0" y="58" font-family="sans-serif" font-size="10" font-weight="600" fill="#64748b" text-anchor="middle">Verification</text>
+      </g>
+
+      <!-- Stage 3: Field Inspection (Completed) -->
+      <g transform="translate(360, 40)">
+        <circle cx="0" cy="0" r="22" fill="#7c3aed" filter="drop-shadow(0 4px 6px rgba(124,58,237,0.3))"/>
+        <path d="M -7,0 L -2,5 L 8,-5" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+        <text x="0" y="44" font-family="sans-serif" font-size="11" font-weight="bold" fill="#334155" text-anchor="middle">Field</text>
+        <text x="0" y="58" font-family="sans-serif" font-size="10" font-weight="600" fill="#64748b" text-anchor="middle">Inspection</text>
+      </g>
+
+      <!-- Stage 4: Tehsildar Review (Current/Pending) -->
+      <g transform="translate(520, 40)">
+        <circle cx="0" cy="0" r="22" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+        <circle cx="0" cy="0" r="8" fill="#7c3aed"/>
+        <text x="0" y="44" font-family="sans-serif" font-size="11" font-weight="bold" fill="#7c3aed" text-anchor="middle">Tehsildar</text>
+        <text x="0" y="58" font-family="sans-serif" font-size="10" font-weight="600" fill="#7c3aed" text-anchor="middle">Review</text>
+      </g>
+
+      <!-- Stage 5: Record Updated (Final) -->
+      <g transform="translate(680, 40)">
+        <circle cx="0" cy="0" r="22" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="3"/>
+        <text x="0" y="44" font-family="sans-serif" font-size="11" font-weight="bold" fill="#94a3b8" text-anchor="middle">Record</text>
+        <text x="0" y="58" font-family="sans-serif" font-size="10" font-weight="600" fill="#94a3b8" text-anchor="middle">Updated</text>
+      </g>
+    </g>
+
+    <!-- 2. SEATED FARMER WITH SMARTPHONE (Center-Right) -->
+    <g transform="translate(730, 80)">
+      <!-- Sitting Body / Kurta -->
+      <path d="M 120,240 Q 80,280 50,420 L 290,420 Q 260,280 200,240 Z" fill="url(#kurta6)" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.15))"/>
+      <!-- Kurta Buttons -->
+      <line x1="160" y1="240" x2="160" y2="380" stroke="#cbd5e1" stroke-width="2"/>
+      <circle cx="160" cy="270" r="3" fill="#94a3b8"/>
+      <circle cx="160" cy="300" r="3" fill="#94a3b8"/>
+      <circle cx="160" cy="330" r="3" fill="#94a3b8"/>
+
+      <!-- Lavender Gamcha / Cloth Draped Over Neck -->
+      <path d="M 115,220 C 100,260 85,360 95,460 L 125,460 C 115,360 130,260 140,225 Z" fill="url(#gamcha6)"/>
+      <path d="M 195,220 C 210,260 225,360 215,460 L 185,460 C 195,360 180,260 170,225 Z" fill="url(#gamcha6)"/>
+
+      <!-- Neck & Head -->
+      <path d="M 140,220 L 180,220 L 175,170 L 145,170 Z" fill="url(#skin6)"/>
+      <!-- Face (Warm Smiling Expression) -->
+      <ellipse cx="160" cy="130" rx="38" ry="46" fill="url(#skin6)"/>
+      <!-- Hair -->
+      <path d="M 122,120 C 122,75 198,75 198,120 C 192,90 132,90 122,120 Z" fill="#1e293b"/>
+      <!-- Mustache & Smile -->
+      <path d="M 145,150 Q 160,158 175,150 Q 160,144 145,150 Z" fill="#0f172a"/>
+      <!-- Smiling Eyes -->
+      <path d="M 140,122 Q 147,116 154,122" stroke="#0f172a" stroke-width="2.5" fill="none"/>
+      <path d="M 166,122 Q 173,116 180,122" stroke="#0f172a" stroke-width="2.5" fill="none"/>
+
+      <!-- Arms Holding Smartphone -->
+      <path d="M 90,260 Q 130,320 150,330 L 170,305 Q 140,280 115,245 Z" fill="url(#kurta6)"/>
+      <path d="M 230,260 Q 190,320 170,330 L 150,305 Q 180,280 205,245 Z" fill="url(#kurta6)"/>
+      <ellipse cx="150" cy="335" rx="16" ry="12" fill="url(#skin6)"/>
+      <ellipse cx="170" cy="335" rx="16" ry="12" fill="url(#skin6)"/>
+
+      <!-- Smartphone in Hand (Showing 5-stage progress screen) -->
+      <g transform="translate(135, 275) rotate(-5)">
+        <rect x="0" y="0" width="50" height="95" rx="8" fill="#0f172a" stroke="#334155" stroke-width="3" filter="drop-shadow(0 8px 12px rgba(0,0,0,0.3))"/>
+        <rect x="4" y="6" width="42" height="83" rx="5" fill="#ffffff"/>
+        <!-- App Header -->
+        <rect x="4" y="6" width="42" height="15" fill="#7c3aed"/>
+        <!-- App Mini Mutation Timeline -->
+        <line x1="12" y1="32" x2="38" y2="32" stroke="#7c3aed" stroke-width="2"/>
+        <circle cx="12" cy="32" r="4" fill="#7c3aed"/>
+        <circle cx="20" cy="32" r="4" fill="#7c3aed"/>
+        <circle cx="28" cy="32" r="4" fill="#7c3aed"/>
+        <circle cx="36" cy="32" r="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+        <!-- App Status Box -->
+        <rect x="8" y="44" width="34" height="18" rx="3" fill="#f0fdf4" stroke="#86efac"/>
+        <rect x="11" y="48" width="20" height="3" rx="1" fill="#166534"/>
+        <rect x="11" y="54" width="28" height="3" rx="1" fill="#15803d"/>
+        <!-- App Action Button -->
+        <rect x="8" y="68" width="34" height="14" rx="3" fill="#7c3aed"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Left-to-Right Subtle Wash Overlay -->
+  <rect x="0" y="0" width="850" height="680" fill="url(#fadeLeft6)"/>
+
+  <!-- Topographic Contour Lines on Left Overlay -->
+  <path d="M 0,80 Q 250,110 400,60 T 720,90" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.12"/>
+  <path d="M 0,200 Q 270,230 430,170 T 770,210" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.12"/>
+  <path d="M 0,330 Q 230,360 460,290 T 810,340" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.12"/>
+  <path d="M 0,460 Q 300,490 510,430 T 860,470" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.12"/>
+</svg>
